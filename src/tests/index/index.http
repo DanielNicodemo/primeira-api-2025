@@ -1,0 +1,8 @@
+@url =https://scaling-spoon-qw5v75rwjw73vpq-8080.app.github.dev/
+GET {{url}}
+
+###
+POST {{url}}
+Content-Type: text/plain
+
+Melão
