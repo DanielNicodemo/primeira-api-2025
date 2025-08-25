@@ -36,7 +36,7 @@ public class AlunoController {
  
         if (resultado.isEmpty()){
             throw new ResponseStatusException(
-                HttpStatus.NOT_FOUND, "Tarefa não encontrada"
+                HttpStatus.NOT_FOUND, "Aluno não encontrado"
                 );
         }
         return alunoRepo.findById(id).get();
@@ -53,7 +53,7 @@ public class AlunoController {
 
         if (resultado.isEmpty()){
             throw new ResponseStatusException(
-                HttpStatus.NOT_FOUND, "Tarefa não encontrada"
+                HttpStatus.NOT_FOUND, "Aluno não encontrado"
                 );
         }
 
@@ -68,7 +68,7 @@ public class AlunoController {
     public void remove(@PathVariable long id){
         if(!alunoRepo.existsById(id)) {
             throw new ResponseStatusException(
-                HttpStatus.NOT_FOUND, "Tarefa não encontrada"
+                HttpStatus.NOT_FOUND, "Aluno não encontrado"
                 );
         }
         alunoRepo.deleteById(id);
